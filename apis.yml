@@ -1,7 +1,27 @@
 aid: bluekai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bluekai.png
 name: BlueKai
-description: BlueKai is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BlueKai was a data management platform (DMP) and third-party audience data
+  marketplace founded in 2008 that let marketers collect, organize, and activate
+  first- and third-party audience data for programmatic advertising and
+  targeting. Oracle acquired BlueKai in 2014 and folded it into the Oracle Data
+  Cloud; Oracle wound down its advertising business (including the former BlueKai
+  and Data Cloud assets) in 2024. The company operates no independent developer
+  program today — the bluekai.com domain 301-redirects to Oracle's advertising
+  pages and exposes no live public API surface. This profile is retained as a
+  historical/defunct provider record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/bluekai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,21 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: oracle
+x-acquired-year: 2014
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Data Management Platform
+- DMP
+- Audience Data
+- AdTech
+- Marketing
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bluekai-domain-security.yml
 - type: Website
   url: http://www.bluekai.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
